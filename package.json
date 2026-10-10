@@ -1,0 +1,31 @@
+{
+  "name": "temple-bar-workspace-trial-309",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@10.34.5",
+  "engines": {
+    "node": "24.21.0"
+  },
+  "scripts": {
+    "build": "pnpm -r run build",
+    "typecheck": "pnpm run build && pnpm -r run typecheck",
+    "lint": "eslint . && pnpm -r run lint",
+    "format:check": "prettier --check . && pnpm -r run format:check",
+    "test": "pnpm -r run test",
+    "knip": "knip --include-entry-exports",
+    "check": "pnpm run typecheck && pnpm run lint && pnpm run format:check && pnpm run test && pnpm run knip",
+    "prepare": "temple-bar hook install",
+    "gate": "temple-bar gate"
+  },
+  "devDependencies": {
+    "@eslint/js": "10.0.1",
+    "@londontypescript/temple-bar": "0.0.10",
+    "@types/node": "24.19.0",
+    "eslint": "10.11.0",
+    "eslint-config-prettier": "10.1.8",
+    "knip": "6.39.0",
+    "prettier": "3.9.9",
+    "typescript": "6.0.3",
+    "typescript-eslint": "8.71.0"
+  }
+}
