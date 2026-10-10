@@ -13,10 +13,13 @@
     "format:check": "prettier --check . && pnpm -r run format:check",
     "test": "pnpm -r run test",
     "knip": "knip --include-entry-exports",
-    "check": "pnpm run typecheck && pnpm run lint && pnpm run format:check && pnpm run test && pnpm run knip"
+    "check": "pnpm run typecheck && pnpm run lint && pnpm run format:check && pnpm run test && pnpm run knip",
+    "prepare": "temple-bar hook install",
+    "gate": "temple-bar gate"
   },
   "devDependencies": {
     "@eslint/js": "10.0.1",
+    "@londontypescript/temple-bar": "0.0.10",
     "@types/node": "24.19.0",
     "eslint": "10.11.0",
     "eslint-config-prettier": "10.1.8",

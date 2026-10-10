@@ -1,3 +1,17 @@
 node_modules/
 dist/
 *.tsbuildinfo
+
+# Added by temple-bar
+coverage/
+*.tgz
+*.log
+.env
+.env.*
+!*.example
+.DS_Store
+Thumbs.db
+.claude/settings.local.json
+CLAUDE.local.md
+.claude/worktrees/
+.temple-bar/
