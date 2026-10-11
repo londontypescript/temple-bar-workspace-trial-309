@@ -46,6 +46,10 @@ importers:
       "@trial/shared":
         specifier: workspace:*
         version: link:../shared
+    devDependencies:
+      "@londontypescript/temple-bar":
+        specifier: 0.0.9
+        version: 0.0.9
 
   packages/shared: {}
 
@@ -135,6 +139,11 @@ packages:
 
   "@londontypescript/temple-bar@0.0.10":
     resolution: { integrity: sha512-w3BQp+LYLYI8QlMeESrgMCXcKrmADmh3uPGwFyNtGP0TSRmekN1+hCBd3oqO9JpqoKYVwsdbMuVfLy/Wi18tKg== }
+    engines: { node: ">=24" }
+    hasBin: true
+
+  "@londontypescript/temple-bar@0.0.9":
+    resolution: { integrity: sha512-UUfu06mMCH/n599Ko+mkeGOLPykpyWp4RsJLws05O3wkURQUBq9khFwXWbcKeW80eoqtTsj6Lhb5LZjKXVT2lA== }
     engines: { node: ">=24" }
     hasBin: true
 
@@ -1030,6 +1039,13 @@ snapshots:
   "@keyv/serialize@1.1.1": {}
 
   "@londontypescript/temple-bar@0.0.10":
+    dependencies:
+      knip: 6.39.0
+      markdownlint: 0.41.1
+    transitivePeerDependencies:
+      - supports-color
+
+  "@londontypescript/temple-bar@0.0.9":
     dependencies:
       knip: 6.39.0
       markdownlint: 0.41.1

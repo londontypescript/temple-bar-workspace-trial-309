@@ -18,5 +18,8 @@
   },
   "dependencies": {
     "@trial/shared": "workspace:*"
+  },
+  "devDependencies": {
+    "@londontypescript/temple-bar": "0.0.9"
   }
 }
